@@ -274,7 +274,7 @@ class DSPydfViewer:
         screens = app.screens()
 
         self.setupAudienceWindow(screens[1].geometry())
-        self.setupPresenterWindow(screens[1].geometry())
+        self.setupPresenterWindow(screens[0].geometry())
 
     def setupAudienceWindow(self, screen):
         self.audienceWindow = AudienceWindow(self.pipe, self.doc, (screen.width(), screen.height()))
